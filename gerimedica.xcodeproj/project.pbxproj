@@ -1,0 +1,1026 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		114A79A3288C063000504A82 /* gerimedicaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A79A2288C063000504A82 /* gerimedicaApp.swift */; };
+		114A79A5288C063000504A82 /* BeerNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A79A4288C063000504A82 /* BeerNavigationView.swift */; };
+		114A79A7288C063100504A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114A79A6288C063100504A82 /* Assets.xcassets */; };
+		114A79AA288C063200504A82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114A79A9288C063200504A82 /* Preview Assets.xcassets */; };
+		114A79B4288C063200504A82 /* gerimedicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A79B3288C063200504A82 /* gerimedicaTests.swift */; };
+		114A79BE288C063200504A82 /* gerimedicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A79BD288C063200504A82 /* gerimedicaUITests.swift */; };
+		114A79C0288C063200504A82 /* gerimedicaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A79BF288C063200504A82 /* gerimedicaUITestsLaunchTests.swift */; };
+		11922379288C1C2A00F7BE00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11922378288C1C2A00F7BE00 /* Constants.swift */; };
+		1192237A288C1C2A00F7BE00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11922378288C1C2A00F7BE00 /* Constants.swift */; };
+		1192237B288C1C2A00F7BE00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11922378288C1C2A00F7BE00 /* Constants.swift */; };
+		1192239C288C320700F7BE00 /* BeerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192239B288C320700F7BE00 /* BeerRow.swift */; };
+		1192239D288C320700F7BE00 /* BeerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192239B288C320700F7BE00 /* BeerRow.swift */; };
+		1192239E288C320700F7BE00 /* BeerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192239B288C320700F7BE00 /* BeerRow.swift */; };
+		119223A8288C3A5300F7BE00 /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119223A7288C3A5300F7BE00 /* BeerDetailView.swift */; };
+		119223A9288C3A5300F7BE00 /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119223A7288C3A5300F7BE00 /* BeerDetailView.swift */; };
+		119223AA288C3A5300F7BE00 /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119223A7288C3A5300F7BE00 /* BeerDetailView.swift */; };
+		11BD5F97288C48E30067535B /* GetBeerUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F96288C48E30067535B /* GetBeerUsecase.swift */; };
+		11BD5F98288C48E30067535B /* GetBeerUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F96288C48E30067535B /* GetBeerUsecase.swift */; };
+		11BD5F99288C48E30067535B /* GetBeerUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F96288C48E30067535B /* GetBeerUsecase.swift */; };
+		11BD5F9C288C51A20067535B /* BeerRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F9B288C51A20067535B /* BeerRepo.swift */; };
+		11BD5F9D288C51A20067535B /* BeerRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F9B288C51A20067535B /* BeerRepo.swift */; };
+		11BD5F9E288C51A20067535B /* BeerRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F9B288C51A20067535B /* BeerRepo.swift */; };
+		11BD5FA0288C542F0067535B /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F9F288C542F0067535B /* NetworkMonitor.swift */; };
+		11BD5FA1288C542F0067535B /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F9F288C542F0067535B /* NetworkMonitor.swift */; };
+		11BD5FA2288C542F0067535B /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F9F288C542F0067535B /* NetworkMonitor.swift */; };
+		11BD5FA4288C60F40067535B /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FA3288C60F40067535B /* Failure.swift */; };
+		11BD5FA5288C60F40067535B /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FA3288C60F40067535B /* Failure.swift */; };
+		11BD5FA6288C60F40067535B /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FA3288C60F40067535B /* Failure.swift */; };
+		11BD5FA9288C61800067535B /* NetworkFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FA8288C61800067535B /* NetworkFailure.swift */; };
+		11BD5FAA288C61800067535B /* NetworkFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FA8288C61800067535B /* NetworkFailure.swift */; };
+		11BD5FAB288C61800067535B /* NetworkFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FA8288C61800067535B /* NetworkFailure.swift */; };
+		11BD5FAE288C79270067535B /* LoadingDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FAD288C79270067535B /* LoadingDataView.swift */; };
+		11BD5FAF288C79270067535B /* LoadingDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FAD288C79270067535B /* LoadingDataView.swift */; };
+		11BD5FB0288C79270067535B /* LoadingDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FAD288C79270067535B /* LoadingDataView.swift */; };
+		11BD5FB2288C79460067535B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FB1288C79460067535B /* ErrorView.swift */; };
+		11BD5FB3288C79460067535B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FB1288C79460067535B /* ErrorView.swift */; };
+		11BD5FB4288C79460067535B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FB1288C79460067535B /* ErrorView.swift */; };
+		11BD5FB6288C7E5D0067535B /* ParamFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FB5288C7E5D0067535B /* ParamFailure.swift */; };
+		11BD5FB7288C7E5D0067535B /* ParamFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FB5288C7E5D0067535B /* ParamFailure.swift */; };
+		11BD5FB8288C7E5D0067535B /* ParamFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5FB5288C7E5D0067535B /* ParamFailure.swift */; };
+		11BD6010288CA3BD0067535B /* Malt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6005288CA3BD0067535B /* Malt.swift */; };
+		11BD6011288CA3BD0067535B /* Malt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6005288CA3BD0067535B /* Malt.swift */; };
+		11BD6012288CA3BD0067535B /* Malt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6005288CA3BD0067535B /* Malt.swift */; };
+		11BD6013288CA3BD0067535B /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6006288CA3BD0067535B /* Ingredients.swift */; };
+		11BD6014288CA3BD0067535B /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6006288CA3BD0067535B /* Ingredients.swift */; };
+		11BD6015288CA3BD0067535B /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6006288CA3BD0067535B /* Ingredients.swift */; };
+		11BD6016288CA3BD0067535B /* Boil_volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6007288CA3BD0067535B /* Boil_volume.swift */; };
+		11BD6017288CA3BD0067535B /* Boil_volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6007288CA3BD0067535B /* Boil_volume.swift */; };
+		11BD6018288CA3BD0067535B /* Boil_volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6007288CA3BD0067535B /* Boil_volume.swift */; };
+		11BD6019288CA3BD0067535B /* Hops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6008288CA3BD0067535B /* Hops.swift */; };
+		11BD601A288CA3BD0067535B /* Hops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6008288CA3BD0067535B /* Hops.swift */; };
+		11BD601B288CA3BE0067535B /* Hops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6008288CA3BD0067535B /* Hops.swift */; };
+		11BD601C288CA3BE0067535B /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6009288CA3BD0067535B /* Temp.swift */; };
+		11BD601D288CA3BE0067535B /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6009288CA3BD0067535B /* Temp.swift */; };
+		11BD601E288CA3BE0067535B /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6009288CA3BD0067535B /* Temp.swift */; };
+		11BD601F288CA3BE0067535B /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600A288CA3BD0067535B /* Fermentation.swift */; };
+		11BD6020288CA3BE0067535B /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600A288CA3BD0067535B /* Fermentation.swift */; };
+		11BD6021288CA3BE0067535B /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600A288CA3BD0067535B /* Fermentation.swift */; };
+		11BD6022288CA3BE0067535B /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600B288CA3BD0067535B /* Amount.swift */; };
+		11BD6023288CA3BE0067535B /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600B288CA3BD0067535B /* Amount.swift */; };
+		11BD6024288CA3BE0067535B /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600B288CA3BD0067535B /* Amount.swift */; };
+		11BD6025288CA3BE0067535B /* Mash_temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600C288CA3BD0067535B /* Mash_temp.swift */; };
+		11BD6026288CA3BE0067535B /* Mash_temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600C288CA3BD0067535B /* Mash_temp.swift */; };
+		11BD6027288CA3BE0067535B /* Mash_temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600C288CA3BD0067535B /* Mash_temp.swift */; };
+		11BD6028288CA3BE0067535B /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600D288CA3BD0067535B /* Volume.swift */; };
+		11BD6029288CA3BE0067535B /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600D288CA3BD0067535B /* Volume.swift */; };
+		11BD602A288CA3BE0067535B /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600D288CA3BD0067535B /* Volume.swift */; };
+		11BD602B288CA3BE0067535B /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600E288CA3BD0067535B /* Method.swift */; };
+		11BD602C288CA3BE0067535B /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600E288CA3BD0067535B /* Method.swift */; };
+		11BD602D288CA3BE0067535B /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600E288CA3BD0067535B /* Method.swift */; };
+		11BD602E288CA3BE0067535B /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600F288CA3BD0067535B /* Beer.swift */; };
+		11BD602F288CA3BE0067535B /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600F288CA3BD0067535B /* Beer.swift */; };
+		11BD6030288CA3BE0067535B /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD600F288CA3BD0067535B /* Beer.swift */; };
+		11BD6032288CA7B60067535B /* ServerFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6031288CA7B60067535B /* ServerFailure.swift */; };
+		11BD6033288CA7B60067535B /* ServerFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6031288CA7B60067535B /* ServerFailure.swift */; };
+		11BD6034288CA7B60067535B /* ServerFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6031288CA7B60067535B /* ServerFailure.swift */; };
+		11BD6037288CC32B0067535B /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6036288CC32B0067535B /* BeerListViewModel.swift */; };
+		11BD6038288CC32B0067535B /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6036288CC32B0067535B /* BeerListViewModel.swift */; };
+		11BD6039288CC32B0067535B /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6036288CC32B0067535B /* BeerListViewModel.swift */; };
+		6FC6602FD94636BA38CF261F /* Pods_gerimedicaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60755FFB938C7B98296E6A3A /* Pods_gerimedicaTests.framework */; };
+		8E32AD4121BDD957E4905D5A /* Pods_gerimedica_gerimedicaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE83625DE090682627C2F15 /* Pods_gerimedica_gerimedicaUITests.framework */; };
+		DE8AFE13C0B615BB014DC7E9 /* Pods_gerimedica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD33986E92F19AB6CF0AA421 /* Pods_gerimedica.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		114A79B0288C063200504A82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 114A7997288C062F00504A82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 114A799E288C062F00504A82;
+			remoteInfo = gerimedica;
+		};
+		114A79BA288C063200504A82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 114A7997288C062F00504A82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 114A799E288C062F00504A82;
+			remoteInfo = gerimedica;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B2358DAE4D91B6F202F513D /* Pods-gerimedica-gerimedicaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gerimedica-gerimedicaUITests.release.xcconfig"; path = "Target Support Files/Pods-gerimedica-gerimedicaUITests/Pods-gerimedica-gerimedicaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		114A799F288C062F00504A82 /* gerimedica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gerimedica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		114A79A2288C063000504A82 /* gerimedicaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gerimedicaApp.swift; sourceTree = "<group>"; };
+		114A79A4288C063000504A82 /* BeerNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerNavigationView.swift; sourceTree = "<group>"; };
+		114A79A6288C063100504A82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		114A79A9288C063200504A82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		114A79AF288C063200504A82 /* gerimedicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gerimedicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		114A79B3288C063200504A82 /* gerimedicaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gerimedicaTests.swift; sourceTree = "<group>"; };
+		114A79B9288C063200504A82 /* gerimedicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gerimedicaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		114A79BD288C063200504A82 /* gerimedicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gerimedicaUITests.swift; sourceTree = "<group>"; };
+		114A79BF288C063200504A82 /* gerimedicaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gerimedicaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11922378288C1C2A00F7BE00 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1192239B288C320700F7BE00 /* BeerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRow.swift; sourceTree = "<group>"; };
+		119223A7288C3A5300F7BE00 /* BeerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailView.swift; sourceTree = "<group>"; };
+		11BD5F96288C48E30067535B /* GetBeerUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBeerUsecase.swift; sourceTree = "<group>"; };
+		11BD5F9B288C51A20067535B /* BeerRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRepo.swift; sourceTree = "<group>"; };
+		11BD5F9F288C542F0067535B /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		11BD5FA3288C60F40067535B /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
+		11BD5FA8288C61800067535B /* NetworkFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFailure.swift; sourceTree = "<group>"; };
+		11BD5FAD288C79270067535B /* LoadingDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDataView.swift; sourceTree = "<group>"; };
+		11BD5FB1288C79460067535B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		11BD5FB5288C7E5D0067535B /* ParamFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamFailure.swift; sourceTree = "<group>"; };
+		11BD6005288CA3BD0067535B /* Malt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Malt.swift; sourceTree = "<group>"; };
+		11BD6006288CA3BD0067535B /* Ingredients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		11BD6007288CA3BD0067535B /* Boil_volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boil_volume.swift; sourceTree = "<group>"; };
+		11BD6008288CA3BD0067535B /* Hops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hops.swift; sourceTree = "<group>"; };
+		11BD6009288CA3BD0067535B /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		11BD600A288CA3BD0067535B /* Fermentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
+		11BD600B288CA3BD0067535B /* Amount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		11BD600C288CA3BD0067535B /* Mash_temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mash_temp.swift; sourceTree = "<group>"; };
+		11BD600D288CA3BD0067535B /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		11BD600E288CA3BD0067535B /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		11BD600F288CA3BD0067535B /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		11BD6031288CA7B60067535B /* ServerFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFailure.swift; sourceTree = "<group>"; };
+		11BD6036288CC32B0067535B /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
+		1390FD208E455D9A67EBC6E2 /* Pods-gerimedica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gerimedica.debug.xcconfig"; path = "Target Support Files/Pods-gerimedica/Pods-gerimedica.debug.xcconfig"; sourceTree = "<group>"; };
+		5BD8B9025258806C9D981591 /* Pods-gerimedicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gerimedicaTests.debug.xcconfig"; path = "Target Support Files/Pods-gerimedicaTests/Pods-gerimedicaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60755FFB938C7B98296E6A3A /* Pods_gerimedicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gerimedicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		882360757B392BB7B84FF807 /* Pods-gerimedica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gerimedica.release.xcconfig"; path = "Target Support Files/Pods-gerimedica/Pods-gerimedica.release.xcconfig"; sourceTree = "<group>"; };
+		991F2C10A37791A65583346B /* Pods-gerimedicaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gerimedicaTests.release.xcconfig"; path = "Target Support Files/Pods-gerimedicaTests/Pods-gerimedicaTests.release.xcconfig"; sourceTree = "<group>"; };
+		994E565554CC2785C38BFC87 /* Pods-gerimedica-gerimedicaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gerimedica-gerimedicaUITests.debug.xcconfig"; path = "Target Support Files/Pods-gerimedica-gerimedicaUITests/Pods-gerimedica-gerimedicaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD33986E92F19AB6CF0AA421 /* Pods_gerimedica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gerimedica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE83625DE090682627C2F15 /* Pods_gerimedica_gerimedicaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gerimedica_gerimedicaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		114A799C288C062F00504A82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8AFE13C0B615BB014DC7E9 /* Pods_gerimedica.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114A79AC288C063200504A82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC6602FD94636BA38CF261F /* Pods_gerimedicaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114A79B6288C063200504A82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E32AD4121BDD957E4905D5A /* Pods_gerimedica_gerimedicaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		114A7996288C062F00504A82 = {
+			isa = PBXGroup;
+			children = (
+				114A79A1288C062F00504A82 /* gerimedica */,
+				114A79B2288C063200504A82 /* gerimedicaTests */,
+				114A79BC288C063200504A82 /* gerimedicaUITests */,
+				114A79A0288C062F00504A82 /* Products */,
+				DD65F139E11100B9950BDDD9 /* Pods */,
+				85AD57F17C9ED06C9052505B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		114A79A0288C062F00504A82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				114A799F288C062F00504A82 /* gerimedica.app */,
+				114A79AF288C063200504A82 /* gerimedicaTests.xctest */,
+				114A79B9288C063200504A82 /* gerimedicaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		114A79A1288C062F00504A82 /* gerimedica */ = {
+			isa = PBXGroup;
+			children = (
+				11922382288C2AD900F7BE00 /* Domain */,
+				11922373288C1BB500F7BE00 /* Core */,
+				114A79CC288C06EB00504A82 /* Presentation */,
+				114A79A2288C063000504A82 /* gerimedicaApp.swift */,
+				114A79A6288C063100504A82 /* Assets.xcassets */,
+				114A79A8288C063200504A82 /* Preview Content */,
+			);
+			path = gerimedica;
+			sourceTree = "<group>";
+		};
+		114A79A8288C063200504A82 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				114A79A9288C063200504A82 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		114A79B2288C063200504A82 /* gerimedicaTests */ = {
+			isa = PBXGroup;
+			children = (
+				114A79B3288C063200504A82 /* gerimedicaTests.swift */,
+			);
+			path = gerimedicaTests;
+			sourceTree = "<group>";
+		};
+		114A79BC288C063200504A82 /* gerimedicaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				114A79BD288C063200504A82 /* gerimedicaUITests.swift */,
+				114A79BF288C063200504A82 /* gerimedicaUITestsLaunchTests.swift */,
+			);
+			path = gerimedicaUITests;
+			sourceTree = "<group>";
+		};
+		114A79CC288C06EB00504A82 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				11BD6035288CC3070067535B /* ViewModel */,
+				11BD5FAC288C790A0067535B /* OtherViews */,
+				11922381288C2A5800F7BE00 /* BeerListRow */,
+				11922380288C29D400F7BE00 /* BeerDetailSheet */,
+				114A79A4288C063000504A82 /* BeerNavigationView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		11922373288C1BB500F7BE00 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				11BD5FA7288C616A0067535B /* Failures */,
+				11922378288C1C2A00F7BE00 /* Constants.swift */,
+				11BD5F9F288C542F0067535B /* NetworkMonitor.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		11922380288C29D400F7BE00 /* BeerDetailSheet */ = {
+			isa = PBXGroup;
+			children = (
+				119223A7288C3A5300F7BE00 /* BeerDetailView.swift */,
+			);
+			path = BeerDetailSheet;
+			sourceTree = "<group>";
+		};
+		11922381288C2A5800F7BE00 /* BeerListRow */ = {
+			isa = PBXGroup;
+			children = (
+				1192239B288C320700F7BE00 /* BeerRow.swift */,
+			);
+			path = BeerListRow;
+			sourceTree = "<group>";
+		};
+		11922382288C2AD900F7BE00 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				11BD5F9A288C51740067535B /* Repositories  */,
+				11BD5F95288C489C0067535B /* Usecase */,
+				11BD5F94288C487D0067535B /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		11BD5F94288C487D0067535B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11BD600B288CA3BD0067535B /* Amount.swift */,
+				11BD600F288CA3BD0067535B /* Beer.swift */,
+				11BD6007288CA3BD0067535B /* Boil_volume.swift */,
+				11BD600A288CA3BD0067535B /* Fermentation.swift */,
+				11BD6008288CA3BD0067535B /* Hops.swift */,
+				11BD6006288CA3BD0067535B /* Ingredients.swift */,
+				11BD6005288CA3BD0067535B /* Malt.swift */,
+				11BD600C288CA3BD0067535B /* Mash_temp.swift */,
+				11BD600E288CA3BD0067535B /* Method.swift */,
+				11BD6009288CA3BD0067535B /* Temp.swift */,
+				11BD600D288CA3BD0067535B /* Volume.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		11BD5F95288C489C0067535B /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				11BD5F96288C48E30067535B /* GetBeerUsecase.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		11BD5F9A288C51740067535B /* Repositories  */ = {
+			isa = PBXGroup;
+			children = (
+				11BD5F9B288C51A20067535B /* BeerRepo.swift */,
+			);
+			path = "Repositories ";
+			sourceTree = "<group>";
+		};
+		11BD5FA7288C616A0067535B /* Failures */ = {
+			isa = PBXGroup;
+			children = (
+				11BD5FA3288C60F40067535B /* Failure.swift */,
+				11BD5FA8288C61800067535B /* NetworkFailure.swift */,
+				11BD5FB5288C7E5D0067535B /* ParamFailure.swift */,
+				11BD6031288CA7B60067535B /* ServerFailure.swift */,
+			);
+			path = Failures;
+			sourceTree = "<group>";
+		};
+		11BD5FAC288C790A0067535B /* OtherViews */ = {
+			isa = PBXGroup;
+			children = (
+				11BD5FAD288C79270067535B /* LoadingDataView.swift */,
+				11BD5FB1288C79460067535B /* ErrorView.swift */,
+			);
+			path = OtherViews;
+			sourceTree = "<group>";
+		};
+		11BD6035288CC3070067535B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11BD6036288CC32B0067535B /* BeerListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		85AD57F17C9ED06C9052505B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD33986E92F19AB6CF0AA421 /* Pods_gerimedica.framework */,
+				EBE83625DE090682627C2F15 /* Pods_gerimedica_gerimedicaUITests.framework */,
+				60755FFB938C7B98296E6A3A /* Pods_gerimedicaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD65F139E11100B9950BDDD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1390FD208E455D9A67EBC6E2 /* Pods-gerimedica.debug.xcconfig */,
+				882360757B392BB7B84FF807 /* Pods-gerimedica.release.xcconfig */,
+				994E565554CC2785C38BFC87 /* Pods-gerimedica-gerimedicaUITests.debug.xcconfig */,
+				0B2358DAE4D91B6F202F513D /* Pods-gerimedica-gerimedicaUITests.release.xcconfig */,
+				5BD8B9025258806C9D981591 /* Pods-gerimedicaTests.debug.xcconfig */,
+				991F2C10A37791A65583346B /* Pods-gerimedicaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		114A799E288C062F00504A82 /* gerimedica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114A79C3288C063200504A82 /* Build configuration list for PBXNativeTarget "gerimedica" */;
+			buildPhases = (
+				02C10EFE1CAB65598745523E /* [CP] Check Pods Manifest.lock */,
+				114A799B288C062F00504A82 /* Sources */,
+				114A799C288C062F00504A82 /* Frameworks */,
+				114A799D288C062F00504A82 /* Resources */,
+				84ABF589881039AD3545904D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gerimedica;
+			productName = gerimedica;
+			productReference = 114A799F288C062F00504A82 /* gerimedica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		114A79AE288C063200504A82 /* gerimedicaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114A79C6288C063200504A82 /* Build configuration list for PBXNativeTarget "gerimedicaTests" */;
+			buildPhases = (
+				5282A58C94CF83D54BA36C1F /* [CP] Check Pods Manifest.lock */,
+				114A79AB288C063200504A82 /* Sources */,
+				114A79AC288C063200504A82 /* Frameworks */,
+				114A79AD288C063200504A82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				114A79B1288C063200504A82 /* PBXTargetDependency */,
+			);
+			name = gerimedicaTests;
+			productName = gerimedicaTests;
+			productReference = 114A79AF288C063200504A82 /* gerimedicaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		114A79B8288C063200504A82 /* gerimedicaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114A79C9288C063200504A82 /* Build configuration list for PBXNativeTarget "gerimedicaUITests" */;
+			buildPhases = (
+				E86EA1E43625743CE1E73961 /* [CP] Check Pods Manifest.lock */,
+				114A79B5288C063200504A82 /* Sources */,
+				114A79B6288C063200504A82 /* Frameworks */,
+				114A79B7288C063200504A82 /* Resources */,
+				0A19784563885D14D7886FA5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				114A79BB288C063200504A82 /* PBXTargetDependency */,
+			);
+			name = gerimedicaUITests;
+			productName = gerimedicaUITests;
+			productReference = 114A79B9288C063200504A82 /* gerimedicaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		114A7997288C062F00504A82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					114A799E288C062F00504A82 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					114A79AE288C063200504A82 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 114A799E288C062F00504A82;
+					};
+					114A79B8288C063200504A82 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 114A799E288C062F00504A82;
+					};
+				};
+			};
+			buildConfigurationList = 114A799A288C062F00504A82 /* Build configuration list for PBXProject "gerimedica" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 114A7996288C062F00504A82;
+			productRefGroup = 114A79A0288C062F00504A82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				114A799E288C062F00504A82 /* gerimedica */,
+				114A79AE288C063200504A82 /* gerimedicaTests */,
+				114A79B8288C063200504A82 /* gerimedicaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		114A799D288C062F00504A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114A79AA288C063200504A82 /* Preview Assets.xcassets in Resources */,
+				114A79A7288C063100504A82 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114A79AD288C063200504A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114A79B7288C063200504A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02C10EFE1CAB65598745523E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gerimedica-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A19784563885D14D7886FA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gerimedica-gerimedicaUITests/Pods-gerimedica-gerimedicaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gerimedica-gerimedicaUITests/Pods-gerimedica-gerimedicaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gerimedica-gerimedicaUITests/Pods-gerimedica-gerimedicaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5282A58C94CF83D54BA36C1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gerimedicaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84ABF589881039AD3545904D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gerimedica/Pods-gerimedica-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gerimedica/Pods-gerimedica-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gerimedica/Pods-gerimedica-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E86EA1E43625743CE1E73961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gerimedica-gerimedicaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		114A799B288C062F00504A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BD6025288CA3BE0067535B /* Mash_temp.swift in Sources */,
+				11BD5F9C288C51A20067535B /* BeerRepo.swift in Sources */,
+				11BD5FAE288C79270067535B /* LoadingDataView.swift in Sources */,
+				11BD5FA4288C60F40067535B /* Failure.swift in Sources */,
+				11BD6010288CA3BD0067535B /* Malt.swift in Sources */,
+				11BD6019288CA3BD0067535B /* Hops.swift in Sources */,
+				11BD5F97288C48E30067535B /* GetBeerUsecase.swift in Sources */,
+				114A79A5288C063000504A82 /* BeerNavigationView.swift in Sources */,
+				11BD602B288CA3BE0067535B /* Method.swift in Sources */,
+				11BD5FA9288C61800067535B /* NetworkFailure.swift in Sources */,
+				1192239C288C320700F7BE00 /* BeerRow.swift in Sources */,
+				114A79A3288C063000504A82 /* gerimedicaApp.swift in Sources */,
+				11BD6016288CA3BD0067535B /* Boil_volume.swift in Sources */,
+				11BD601C288CA3BE0067535B /* Temp.swift in Sources */,
+				11BD6037288CC32B0067535B /* BeerListViewModel.swift in Sources */,
+				11922379288C1C2A00F7BE00 /* Constants.swift in Sources */,
+				11BD5FA0288C542F0067535B /* NetworkMonitor.swift in Sources */,
+				11BD6032288CA7B60067535B /* ServerFailure.swift in Sources */,
+				119223A8288C3A5300F7BE00 /* BeerDetailView.swift in Sources */,
+				11BD6022288CA3BE0067535B /* Amount.swift in Sources */,
+				11BD5FB6288C7E5D0067535B /* ParamFailure.swift in Sources */,
+				11BD602E288CA3BE0067535B /* Beer.swift in Sources */,
+				11BD6013288CA3BD0067535B /* Ingredients.swift in Sources */,
+				11BD6028288CA3BE0067535B /* Volume.swift in Sources */,
+				11BD601F288CA3BE0067535B /* Fermentation.swift in Sources */,
+				11BD5FB2288C79460067535B /* ErrorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114A79AB288C063200504A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BD6014288CA3BD0067535B /* Ingredients.swift in Sources */,
+				114A79B4288C063200504A82 /* gerimedicaTests.swift in Sources */,
+				11BD5FAA288C61800067535B /* NetworkFailure.swift in Sources */,
+				11BD6023288CA3BE0067535B /* Amount.swift in Sources */,
+				11BD6011288CA3BD0067535B /* Malt.swift in Sources */,
+				11BD6033288CA7B60067535B /* ServerFailure.swift in Sources */,
+				11BD5F98288C48E30067535B /* GetBeerUsecase.swift in Sources */,
+				11BD5FA1288C542F0067535B /* NetworkMonitor.swift in Sources */,
+				11BD5FA5288C60F40067535B /* Failure.swift in Sources */,
+				11BD6038288CC32B0067535B /* BeerListViewModel.swift in Sources */,
+				11BD6026288CA3BE0067535B /* Mash_temp.swift in Sources */,
+				11BD5FB7288C7E5D0067535B /* ParamFailure.swift in Sources */,
+				11BD602C288CA3BE0067535B /* Method.swift in Sources */,
+				11BD5F9D288C51A20067535B /* BeerRepo.swift in Sources */,
+				11BD5FAF288C79270067535B /* LoadingDataView.swift in Sources */,
+				11BD6029288CA3BE0067535B /* Volume.swift in Sources */,
+				11BD5FB3288C79460067535B /* ErrorView.swift in Sources */,
+				11BD602F288CA3BE0067535B /* Beer.swift in Sources */,
+				1192239D288C320700F7BE00 /* BeerRow.swift in Sources */,
+				11BD6017288CA3BD0067535B /* Boil_volume.swift in Sources */,
+				1192237A288C1C2A00F7BE00 /* Constants.swift in Sources */,
+				119223A9288C3A5300F7BE00 /* BeerDetailView.swift in Sources */,
+				11BD601D288CA3BE0067535B /* Temp.swift in Sources */,
+				11BD601A288CA3BD0067535B /* Hops.swift in Sources */,
+				11BD6020288CA3BE0067535B /* Fermentation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114A79B5288C063200504A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BD6027288CA3BE0067535B /* Mash_temp.swift in Sources */,
+				11BD5F9E288C51A20067535B /* BeerRepo.swift in Sources */,
+				11BD5FB0288C79270067535B /* LoadingDataView.swift in Sources */,
+				11BD5FA6288C60F40067535B /* Failure.swift in Sources */,
+				11BD6012288CA3BD0067535B /* Malt.swift in Sources */,
+				11BD601B288CA3BE0067535B /* Hops.swift in Sources */,
+				11BD5F99288C48E30067535B /* GetBeerUsecase.swift in Sources */,
+				114A79C0288C063200504A82 /* gerimedicaUITestsLaunchTests.swift in Sources */,
+				11BD602D288CA3BE0067535B /* Method.swift in Sources */,
+				11BD5FAB288C61800067535B /* NetworkFailure.swift in Sources */,
+				1192239E288C320700F7BE00 /* BeerRow.swift in Sources */,
+				114A79BE288C063200504A82 /* gerimedicaUITests.swift in Sources */,
+				11BD6018288CA3BD0067535B /* Boil_volume.swift in Sources */,
+				11BD601E288CA3BE0067535B /* Temp.swift in Sources */,
+				11BD6039288CC32B0067535B /* BeerListViewModel.swift in Sources */,
+				1192237B288C1C2A00F7BE00 /* Constants.swift in Sources */,
+				11BD5FA2288C542F0067535B /* NetworkMonitor.swift in Sources */,
+				11BD6034288CA7B60067535B /* ServerFailure.swift in Sources */,
+				119223AA288C3A5300F7BE00 /* BeerDetailView.swift in Sources */,
+				11BD6024288CA3BE0067535B /* Amount.swift in Sources */,
+				11BD5FB8288C7E5D0067535B /* ParamFailure.swift in Sources */,
+				11BD6030288CA3BE0067535B /* Beer.swift in Sources */,
+				11BD6015288CA3BD0067535B /* Ingredients.swift in Sources */,
+				11BD602A288CA3BE0067535B /* Volume.swift in Sources */,
+				11BD6021288CA3BE0067535B /* Fermentation.swift in Sources */,
+				11BD5FB4288C79460067535B /* ErrorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		114A79B1288C063200504A82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 114A799E288C062F00504A82 /* gerimedica */;
+			targetProxy = 114A79B0288C063200504A82 /* PBXContainerItemProxy */;
+		};
+		114A79BB288C063200504A82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 114A799E288C062F00504A82 /* gerimedica */;
+			targetProxy = 114A79BA288C063200504A82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		114A79C1288C063200504A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		114A79C2288C063200504A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		114A79C4288C063200504A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1390FD208E455D9A67EBC6E2 /* Pods-gerimedica.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"gerimedica/Preview Content\"";
+				DEVELOPMENT_TEAM = 4M538E22HU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enochtech.nl.gerimedica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		114A79C5288C063200504A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882360757B392BB7B84FF807 /* Pods-gerimedica.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"gerimedica/Preview Content\"";
+				DEVELOPMENT_TEAM = 4M538E22HU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enochtech.nl.gerimedica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		114A79C7288C063200504A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD8B9025258806C9D981591 /* Pods-gerimedicaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4M538E22HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enochtech.nl.gerimedicaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gerimedica.app/gerimedica";
+			};
+			name = Debug;
+		};
+		114A79C8288C063200504A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 991F2C10A37791A65583346B /* Pods-gerimedicaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4M538E22HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enochtech.nl.gerimedicaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gerimedica.app/gerimedica";
+			};
+			name = Release;
+		};
+		114A79CA288C063200504A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 994E565554CC2785C38BFC87 /* Pods-gerimedica-gerimedicaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4M538E22HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enochtech.nl.gerimedicaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gerimedica;
+			};
+			name = Debug;
+		};
+		114A79CB288C063200504A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B2358DAE4D91B6F202F513D /* Pods-gerimedica-gerimedicaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4M538E22HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enochtech.nl.gerimedicaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gerimedica;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		114A799A288C062F00504A82 /* Build configuration list for PBXProject "gerimedica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114A79C1288C063200504A82 /* Debug */,
+				114A79C2288C063200504A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		114A79C3288C063200504A82 /* Build configuration list for PBXNativeTarget "gerimedica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114A79C4288C063200504A82 /* Debug */,
+				114A79C5288C063200504A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		114A79C6288C063200504A82 /* Build configuration list for PBXNativeTarget "gerimedicaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114A79C7288C063200504A82 /* Debug */,
+				114A79C8288C063200504A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		114A79C9288C063200504A82 /* Build configuration list for PBXNativeTarget "gerimedicaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114A79CA288C063200504A82 /* Debug */,
+				114A79CB288C063200504A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 114A7997288C062F00504A82 /* Project object */;
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C6D9984A-A1BB-4186-8CD2-796588BAA547"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA4C1E7D-86E6-40AB-95B7-A5B72FC8D13D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Domain/Models/Hops.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "BA4C1E7D-86E6-40AB-95B7-A5B72FC8D13D - 9257f9b5675651fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gerimedica.Hops.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;gerimedica.Hops.CodingKeys&gt;"
+                  moduleName = "gerimedica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaheem/Desktop/Personal_Projects/Gerimedica/gerimedica/gerimedica/Domain/Models/Hops.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "73">
+               </Location>
+               <Location
+                  uuid = "BA4C1E7D-86E6-40AB-95B7-A5B72FC8D13D - 92a7b0f376b69e0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gerimedica.Hops.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "gerimedica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaheem/Desktop/Personal_Projects/Gerimedica/gerimedica/gerimedica/Domain/Models/Hops.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
