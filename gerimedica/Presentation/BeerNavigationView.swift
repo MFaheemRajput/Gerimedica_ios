@@ -12,6 +12,7 @@ struct BeerNavigationView: View {
     
     @State private var p:Int = 1
     @ObservedObject var viewModel = BeerListViewModel(getBeerUsecase: GetBeerUsecase())
+    @State private var searchText = ""
     
     var body: some View {
         
@@ -26,27 +27,32 @@ struct BeerNavigationView: View {
         case .loading:
             ProgressView()
         case .failed(let err):
-            ErrorView(errString: err.message) {
+            ErrorView(errString: "Not Implemented Yet") {
                 viewModel.load(page: p)
             }
+            
         case .loaded(let beers):
+            
             NavigationView{
-                List(beers) { beer in
-                    NavigationLink(destination: BeerDetailView(beer: beer)) {
-                        BeerRow(beer: beer)
-                    
-                }
+                VStack{
+                    SearchBar(text: $searchText).padding(.top, 10.0)
+                    List(beers.filter({ searchText.isEmpty ? true : $0.name!.lowercased().contains(searchText.lowercased()) })) { beer in
+                        NavigationLink(destination: BeerDetailView(beer: beer)) {
+                            BeerRow(beer: beer)
+                            
+                        }
                     }.onAppear {
-                    p += 1
-                }//: LIST
-                .navigationTitle("Beers")
+                        p += 1
+                    }//: LIST
+                    .navigationTitle("Beers")
+                }
             }//: NAVIGATION
         }
     }
 }
 
 #if DEBUG
-//struct ContentView_Previews: PreviewProvider {
+//struct ContentView_Previews: PreviewProvider
 //    static var previews: some View {
 //        BeerNavigationView()
 //    }

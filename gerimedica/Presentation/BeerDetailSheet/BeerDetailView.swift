@@ -10,6 +10,7 @@ import SwiftUI
 struct BeerDetailView: View {
     var beer:Beer?
     var body: some View {
+        ScrollView {
         VStack{
             AsyncImage(url: URL(string: (beer?.image_url)!), scale: 1.5) { image in
                         image
@@ -18,13 +19,15 @@ struct BeerDetailView: View {
                     } placeholder: {
                         Color.gray
                     }
-                    .padding([.top, .leading, .trailing], 15.0)
+                    .padding([.leading, .trailing], 15.0)
+                    .padding(.top, 0.0)
                     .frame(height: 240)
             
-            Text((beer?.name)!)
-            Text((beer?.description)!)
+            Spacer()
+            Text((beer?.name)!).padding(.horizontal, 12.0)
+            Text((beer?.description)!).padding([.horizontal,.vertical],12.0)
         }
-        
+        }
     }
 }
 

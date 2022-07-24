@@ -14,6 +14,7 @@ class BeerListViewModel: ObservableObject {
         case failed(Failure)
         case loaded([Beer])
     }
+    
     @Published private(set) var state = State.idle
 
     private var getBeerUsecase: GetBeerUsecase

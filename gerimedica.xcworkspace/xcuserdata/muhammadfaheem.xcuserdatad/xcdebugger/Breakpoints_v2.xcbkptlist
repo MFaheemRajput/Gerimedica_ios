@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "384B2709-8C57-4EF9-B35C-4CC340E20CD5"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gerimedica/Domain/Repositories /BeerRepo.swift"
@@ -46,8 +46,8 @@
             filePath = "gerimedica/Domain/Repositories /BeerRepo.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "fetchBeerListFromRepo(page:perPage:onCompletion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -72,7 +72,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FE5381F3-D07E-41BE-9365-34A03528D272"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gerimedica/Domain/Repositories /BeerRepo.swift"
@@ -104,7 +104,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "19438150-F37A-47DF-94B3-9BF430A4D2D3"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gerimedica/Domain/Repositories /BeerRepo.swift"
@@ -120,7 +120,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BC7EF530-6437-48B5-8775-7107C9F688A1"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gerimedica/Domain/Repositories /BeerRepo.swift"
@@ -128,6 +128,278 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
+            landmarkName = "fetchBeerListFromRepo(page:perPage:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6EC06EEF-3AFC-4E19-98E3-C0383A7DBCE5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Presentation/BeerNavigationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43A8AEF1-AAA8-4400-8F24-CD3D53B1B3BC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Presentation/BeerNavigationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B595101-9810-4D7A-9AB0-9577DA4BF448"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Presentation/ViewModel/BeerListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "load(page:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1B595101-9810-4D7A-9AB0-9577DA4BF448 - 6cd28d45601e9bef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gerimedica.BeerListViewModel.load(page: Swift.Int) -&gt; ()"
+                  moduleName = "gerimedica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaheem/Desktop/Personal_Projects/Gerimedica/Gerimedica_ios/gerimedica/Presentation/ViewModel/BeerListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  uuid = "1B595101-9810-4D7A-9AB0-9577DA4BF448 - 330b544f70c0bc02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;gerimedica.Failure&gt;, Swift.Optional&lt;Swift.Array&lt;gerimedica.Beer&gt;&gt;) -&gt; () in gerimedica.BeerListViewModel.load(page: Swift.Int) -&gt; ()"
+                  moduleName = "gerimedica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaheem/Desktop/Personal_Projects/Gerimedica/Gerimedica_ios/gerimedica/Presentation/ViewModel/BeerListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "127">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15D44B27-7C58-4022-A388-CA6831AC4A34"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Presentation/ViewModel/BeerListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "load(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BEA79CF-9085-4857-A0FE-633B9A58F949"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Presentation/ViewModel/BeerListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "load(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52E23EB9-F008-4699-823A-7FE3FC76E427"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Domain/Usecase/GetBeerUsecase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getBeers(page:perPage:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08355966-8984-45E6-9AA6-E64CE48229AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Domain/Usecase/GetBeerUsecase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getBeers(page:perPage:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4FDF50F-9006-4C34-B2D7-3D48A18169FD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Domain/Usecase/GetBeerUsecase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getBeers(page:perPage:onCompletion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E4FDF50F-9006-4C34-B2D7-3D48A18169FD - f8ad8ce1274eed39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;gerimedica.Failure&gt;, Swift.Optional&lt;Swift.Array&lt;gerimedica.Beer&gt;&gt;) -&gt; () in gerimedica.GetBeerUsecase.getBeers(page: Swift.Int, perPage: Swift.Int, onCompletion: (Swift.Optional&lt;gerimedica.Failure&gt;, Swift.Optional&lt;Swift.Array&lt;gerimedica.Beer&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "gerimedica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaheem/Desktop/Personal_Projects/Gerimedica/Gerimedica_ios/gerimedica/Domain/Usecase/GetBeerUsecase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "E4FDF50F-9006-4C34-B2D7-3D48A18169FD - f8ad8ce1274eed39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;gerimedica.Failure&gt;, Swift.Optional&lt;Swift.Array&lt;gerimedica.Beer&gt;&gt;) -&gt; () in gerimedica.GetBeerUsecase.getBeers(page: Swift.Int, perPage: Swift.Int, onCompletion: (Swift.Optional&lt;gerimedica.Failure&gt;, Swift.Optional&lt;Swift.Array&lt;gerimedica.Beer&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "gerimedica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaheem/Desktop/Personal_Projects/Gerimedica/Gerimedica_ios/gerimedica/Domain/Usecase/GetBeerUsecase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "314">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E493655-C03B-445C-989B-3A153307181D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Domain/Usecase/GetBeerUsecase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getBeers(page:perPage:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "534D751B-0FE7-4139-B302-8FF6AEAB3730"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Domain/Repositories /BeerRepo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchBeerListFromRepo(page:perPage:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9BFF509-D7EC-435E-B3AB-9EBC291C0FF1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Domain/Repositories /BeerRepo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "fetchBeerListFromRepo(page:perPage:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6354DEBB-99E4-484A-B009-088C5C887EAB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Domain/Usecase/GetBeerUsecase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getBeers(page:perPage:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A469D55-4D22-4F86-97E0-224793D51425"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gerimedica/Domain/Repositories /BeerRepo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "fetchBeerListFromRepo(page:perPage:onCompletion:)"
             landmarkType = "7">
          </BreakpointContent>

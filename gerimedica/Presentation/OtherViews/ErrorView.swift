@@ -10,13 +10,11 @@ import SwiftUI
 
 struct ErrorView: View {
     var errString:String
-    var function: () -> Void
+    var retry:() -> Void
     
     var body: some View {
         Text(errString)
-        Button(action: {
-            self.function()
-        }, label: {
+        Button(action: retry, label: {
             Text("Retry")
                 .fontWeight(.bold)
                 .font(.title)

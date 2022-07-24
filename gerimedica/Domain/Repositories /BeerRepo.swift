@@ -49,7 +49,10 @@ struct BeerRepoImpl : BeerRepo{
             }
         }
         else {
+            NetworkMonitor.shared.stopMonitoring()
+            NetworkMonitor.shared.startMonitoring()
             onCompletion(NetworkFailure(""),nil)
+            
         }
          
     }

@@ -86,6 +86,11 @@
 		11BD6037288CC32B0067535B /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6036288CC32B0067535B /* BeerListViewModel.swift */; };
 		11BD6038288CC32B0067535B /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6036288CC32B0067535B /* BeerListViewModel.swift */; };
 		11BD6039288CC32B0067535B /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6036288CC32B0067535B /* BeerListViewModel.swift */; };
+		11BD603C288D49990067535B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 11BD603B288D49990067535B /* SDWebImageSwiftUI */; };
+		11BD603F288D4B260067535B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 11BD603E288D4B260067535B /* Alamofire */; };
+		11BD6042288D4CA30067535B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6041288D4CA30067535B /* SearchBar.swift */; };
+		11BD6043288D4CA30067535B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6041288D4CA30067535B /* SearchBar.swift */; };
+		11BD6044288D4CA30067535B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD6041288D4CA30067535B /* SearchBar.swift */; };
 		6FC6602FD94636BA38CF261F /* Pods_gerimedicaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60755FFB938C7B98296E6A3A /* Pods_gerimedicaTests.framework */; };
 		8E32AD4121BDD957E4905D5A /* Pods_gerimedica_gerimedicaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE83625DE090682627C2F15 /* Pods_gerimedica_gerimedicaUITests.framework */; };
 		DE8AFE13C0B615BB014DC7E9 /* Pods_gerimedica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD33986E92F19AB6CF0AA421 /* Pods_gerimedica.framework */; };
@@ -144,6 +149,7 @@
 		11BD600F288CA3BD0067535B /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		11BD6031288CA7B60067535B /* ServerFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFailure.swift; sourceTree = "<group>"; };
 		11BD6036288CC32B0067535B /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
+		11BD6041288D4CA30067535B /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		1390FD208E455D9A67EBC6E2 /* Pods-gerimedica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gerimedica.debug.xcconfig"; path = "Target Support Files/Pods-gerimedica/Pods-gerimedica.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD8B9025258806C9D981591 /* Pods-gerimedicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gerimedicaTests.debug.xcconfig"; path = "Target Support Files/Pods-gerimedicaTests/Pods-gerimedicaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		60755FFB938C7B98296E6A3A /* Pods_gerimedicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gerimedicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +165,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BD603F288D4B260067535B /* Alamofire in Frameworks */,
+				11BD603C288D49990067535B /* SDWebImageSwiftUI in Frameworks */,
 				DE8AFE13C0B615BB014DC7E9 /* Pods_gerimedica.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +253,7 @@
 		114A79CC288C06EB00504A82 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				11BD6040288D4C900067535B /* Search */,
 				11BD6035288CC3070067535B /* ViewModel */,
 				11BD5FAC288C790A0067535B /* OtherViews */,
 				11922381288C2A5800F7BE00 /* BeerListRow */,
@@ -352,6 +361,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		11BD6040288D4C900067535B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				11BD6041288D4CA30067535B /* SearchBar.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		85AD57F17C9ED06C9052505B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,13 +403,16 @@
 				114A799B288C062F00504A82 /* Sources */,
 				114A799C288C062F00504A82 /* Frameworks */,
 				114A799D288C062F00504A82 /* Resources */,
-				84ABF589881039AD3545904D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = gerimedica;
+			packageProductDependencies = (
+				11BD603B288D49990067535B /* SDWebImageSwiftUI */,
+				11BD603E288D4B260067535B /* Alamofire */,
+			);
 			productName = gerimedica;
 			productReference = 114A799F288C062F00504A82 /* gerimedica.app */;
 			productType = "com.apple.product-type.application";
@@ -424,7 +444,6 @@
 				114A79B5288C063200504A82 /* Sources */,
 				114A79B6288C063200504A82 /* Frameworks */,
 				114A79B7288C063200504A82 /* Resources */,
-				0A19784563885D14D7886FA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,6 +487,10 @@
 				Base,
 			);
 			mainGroup = 114A7996288C062F00504A82;
+			packageReferences = (
+				11BD603A288D49990067535B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				11BD603D288D4B260067535B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 114A79A0288C062F00504A82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -528,23 +551,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0A19784563885D14D7886FA5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gerimedica-gerimedicaUITests/Pods-gerimedica-gerimedicaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gerimedica-gerimedicaUITests/Pods-gerimedica-gerimedicaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gerimedica-gerimedicaUITests/Pods-gerimedica-gerimedicaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5282A58C94CF83D54BA36C1F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -565,23 +571,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		84ABF589881039AD3545904D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gerimedica/Pods-gerimedica-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gerimedica/Pods-gerimedica-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gerimedica/Pods-gerimedica-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E86EA1E43625743CE1E73961 /* [CP] Check Pods Manifest.lock */ = {
@@ -627,6 +616,7 @@
 				114A79A3288C063000504A82 /* gerimedicaApp.swift in Sources */,
 				11BD6016288CA3BD0067535B /* Boil_volume.swift in Sources */,
 				11BD601C288CA3BE0067535B /* Temp.swift in Sources */,
+				11BD6042288D4CA30067535B /* SearchBar.swift in Sources */,
 				11BD6037288CC32B0067535B /* BeerListViewModel.swift in Sources */,
 				11922379288C1C2A00F7BE00 /* Constants.swift in Sources */,
 				11BD5FA0288C542F0067535B /* NetworkMonitor.swift in Sources */,
@@ -659,6 +649,7 @@
 				11BD6026288CA3BE0067535B /* Mash_temp.swift in Sources */,
 				11BD5FB7288C7E5D0067535B /* ParamFailure.swift in Sources */,
 				11BD602C288CA3BE0067535B /* Method.swift in Sources */,
+				11BD6043288D4CA30067535B /* SearchBar.swift in Sources */,
 				11BD5F9D288C51A20067535B /* BeerRepo.swift in Sources */,
 				11BD5FAF288C79270067535B /* LoadingDataView.swift in Sources */,
 				11BD6029288CA3BE0067535B /* Volume.swift in Sources */,
@@ -692,6 +683,7 @@
 				114A79BE288C063200504A82 /* gerimedicaUITests.swift in Sources */,
 				11BD6018288CA3BD0067535B /* Boil_volume.swift in Sources */,
 				11BD601E288CA3BE0067535B /* Temp.swift in Sources */,
+				11BD6044288D4CA30067535B /* SearchBar.swift in Sources */,
 				11BD6039288CC32B0067535B /* BeerListViewModel.swift in Sources */,
 				1192237B288C1C2A00F7BE00 /* Constants.swift in Sources */,
 				11BD5FA2288C542F0067535B /* NetworkMonitor.swift in Sources */,
@@ -1021,6 +1013,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11BD603A288D49990067535B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		11BD603D288D4B260067535B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11BD603B288D49990067535B /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11BD603A288D49990067535B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		11BD603E288D4B260067535B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11BD603D288D4B260067535B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 114A7997288C062F00504A82 /* Project object */;
 }
